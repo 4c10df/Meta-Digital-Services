@@ -11,8 +11,9 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/38e77e8a43.js" crossorigin="anonymous"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- swiper css -->
 </head>
 <body>
     <div class="relative flex flex-col justify-center items-center w-full bg-white">
@@ -40,7 +41,7 @@
                                         <a class=" block py-2 px-3 text-[#FFFFFF]  text-[16px] font-bold  hover:bg-[#505050] hover:border-[#19A20C] rounded-[8px] hover:border-[2px] hover:text-[#38E427] transition-all duration-300 ease-in-out" href="index.html">Home</a>
                                     </li>
                                     <li class="lg:mx-4 my-6 md:my-0">
-                                        <a class="text-[#19A20C] block py-2 px-3  text-[16px] font-bold  hover:bg-[#505050] hover:border-[#19A20C] rounded-[8px] hover:border-[2px] hover:text-[#38E427] transition-all duration-300 ease-in-out" href="about.html">About Us</a>
+                                        <a class="text-[#19A20C] block py-2 px-3  text-[16px] font-bold  bg-[#505050] border-[#19A20C] rounded-[8px] border-[2px] transition-all duration-300 ease-in-out" href="about.html">About Us</a>
                                     </li>
                                     <li class="lg:mx-4 my-6 md:my-0">
                                         <a class="text-[#FFFFFF] block py-2 px-3  text-[16px] font-bold  hover:bg-[#505050] hover:border-[#19A20C] rounded-[8px] hover:border-[2px] hover:text-[#38E427] transition-all duration-300 ease-in-out" href="#">Our Works</a>
@@ -169,57 +170,135 @@
                 <div class="static w-full flex flex-col justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
                     <div class="relative w-full text-center lg:w-[827px] mb-[20px]">
                         <h2 class="text-[#166534] text-center mb-[10px] !font-bold">
-                            The Synergy of Success: Creating a Balanced 
+                            What Our Customers are Saying
                         </h2>
                         <p class="leading-[32px] text-[20px] text-center text-[#676767]">
                             We provide the best technology solutions for our clients through our partners. 
                             In our quest to serve the world we have built our organisation on efficiency 
                         </p>
                     </div>
-                    <!---slider-->
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mb-[15px] w-full">
-                        <div class="flex flex-col justify-center items-center text-center w-full lg:w-[357px]">
-                            <div class="relative w-[80px] h-[80px] overflow-hidden rounded-[100px]">
-                                <img class=" h-full w-full" src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="customer">
-                            </div>
-                            <div class=" at500:w-[280px]">
-                                <span class="text-[#484848] leading-[32px] text-[20px] mb-[10px] font-semibold">
-                                    Jasmine Chiz
-                                </span>
-                                <p class="leading-[24px] text-[16px] text-[#484848]">
-                                    MDS has given me the best service ever I have been able to build my technology seamlessly
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-center items-center text-center w-full lg:w-[357px]">
-                            <div class="relative w-[80px] h-[80px] overflow-hidden rounded-[100px]">
-                                <img class=" h-full w-full" src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="customer">
-                            </div>
-                            <div class=" at500:w-[280px]">
-                                <span class="text-[#484848] leading-[32px] text-[20px] mb-[10px] font-semibold">
-                                    Jasmine Chiz
-                                </span>
-                                <p class="leading-[24px] text-[16px] text-[#484848]">
-                                    MDS has given me the best service ever I have been able to build my technology seamlessly
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col justify-center items-center text-center w-full lg:w-[357px]">
-                            <div class="relative w-[80px] h-[80px] overflow-hidden rounded-[100px]">
-                                <img class=" h-full w-full" src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="customer">
-                            </div>
-                            <div class=" at500:w-[280px]">
-                                <span class="text-[#484848] leading-[32px] text-[20px] mb-[10px] font-semibold">
-                                    Jasmine Chiz
-                                </span>
-                                <p class="leading-[24px] text-[16px] text-[#484848]">
-                                    MDS has given me the best service ever I have been able to build my technology seamlessly
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
+            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[20px]">
+                <!---slider-->
+                <div class="relative bg-white flex justify-center  h-auto w-screen">
+
+                    <div class="slider-container swiper  xl:w-[1120px] mb-[30px]">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+    
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/Frame 1597881943.png" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <span class="overlay"></span>
+                                        <div class="card-image">
+                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="name">Jasmine Chiz</span>
+                                        <p class="discription">
+                                            We provide the best technology solutions for our clients through our partners.
+                                            In our quest to serve the world we have built our organisation on efficiency 
+                                        </p>
+                                        <!-- <button class="btn">view more</button> -->
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev !hidden sm:!block"></div>
+                        <div class="swiper-button-next !hidden sm:!block"></div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!--what our customer are saying ends-->
             <!---Story Globally-->
             <section class="relative flex flex-col justify-center items-center w-full h-auto my-[50px]">
                 <div class="static w-full flex justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
@@ -418,14 +497,9 @@
         </footer>
 
     </div>
-    <script>
-        function Menu(e){
-          let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[51px]') ,
-           list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[51px]'),
-           list.classList.remove('opacity-100'))
-        }
-    </script>
+    <!-- swiper js -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- swiper js -->
     <script src="index.js"></script>
 </body>
 </html>

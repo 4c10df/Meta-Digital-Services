@@ -197,4 +197,126 @@ button:hover {
     color: #38E427;
     border-style: solid;
     border-radius: 0px ;
+    border-radius: 20px;
 }
+
+
+
+
+
+
+
+/* slider starts */
+
+.slider-container{
+    /* max-width: 1120px; */
+    width: 100%;
+    background-color: white;
+    padding: 40px 0;
+
+}
+.slide-content{
+    margin: 0 27px;
+}
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color:#F0FDF4;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 37px 23px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0 25px;
+    background-color: #16A34A;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #16A34A;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #F0FDF4;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #16A34A;
+}
+.name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #484848;
+    line-height: 32px;
+    font-family: "Familjen Grotesk";
+}
+.discription{
+    font-size: 16px;
+    color: #484848;
+    text-align: center;
+    line-height: 24px;
+}
+.btn{
+    border: none !important;
+    font-size: 16px;
+    color: #FFF ;
+    padding: 8px 16px !important;
+    background-color: #16A34A !important;
+    border-radius: 6px !important;
+    margin: 14px !important;
+    cursor: pointer;
+    transition:all 0.3s ease !important ;
+}
+.btn:hover{
+    background-color: #505050 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #16A34A !important;
+}
+.swiper-button-prev{
+    left: -2px !important;
+}
+.swiper-button-next{
+    right: -2px !important;
+}
+.swiper-pagination {
+    position: relative;
+    bottom: 0px !important;
+    
+}
+.swiper-pagination-bullet-active{
+    background: #16A34A !important;
+}
+/* slider starts end here*/
